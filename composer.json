@@ -1,0 +1,14 @@
+{
+    "name": "webteam-srl/test-protobuf",
+    "version": "0.0.1",
+    "description": "Protocol buffers for cosmic modules",
+    "type": "library",
+    "license": "proprietary",
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "WebTeam\\Demo\\Cosmic\\Proto\\": "Proto"
+        }
+    }
+}
