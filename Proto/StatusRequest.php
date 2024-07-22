@@ -18,7 +18,11 @@ class StatusRequest extends \Google\Protobuf\Internal\Message
      */
     protected $provider = 0;
     /**
-     * Generated from protobuf field <code>int64 request_id = 2;</code>
+     * Generated from protobuf field <code>.demo.Account account = 2;</code>
+     */
+    protected $account = null;
+    /**
+     * Generated from protobuf field <code>int64 request_id = 3;</code>
      */
     protected $request_id = 0;
 
@@ -29,6 +33,7 @@ class StatusRequest extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type int $provider
+     *     @type \WebTeam\Demo\Cosmic\Proto\Account $account
      *     @type int|string $request_id
      * }
      */
@@ -60,7 +65,39 @@ class StatusRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>int64 request_id = 2;</code>
+     * Generated from protobuf field <code>.demo.Account account = 2;</code>
+     * @return \WebTeam\Demo\Cosmic\Proto\Account|null
+     */
+    public function getAccount()
+    {
+        return $this->account;
+    }
+
+    public function hasAccount()
+    {
+        return isset($this->account);
+    }
+
+    public function clearAccount()
+    {
+        unset($this->account);
+    }
+
+    /**
+     * Generated from protobuf field <code>.demo.Account account = 2;</code>
+     * @param \WebTeam\Demo\Cosmic\Proto\Account $var
+     * @return $this
+     */
+    public function setAccount($var)
+    {
+        GPBUtil::checkMessage($var, \WebTeam\Demo\Cosmic\Proto\Account::class);
+        $this->account = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int64 request_id = 3;</code>
      * @return int|string
      */
     public function getRequestId()
@@ -69,7 +106,7 @@ class StatusRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>int64 request_id = 2;</code>
+     * Generated from protobuf field <code>int64 request_id = 3;</code>
      * @param int|string $var
      * @return $this
      */

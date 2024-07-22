@@ -12,23 +12,28 @@ use UnexpectedValueException;
 class Status
 {
     /**
-     * Generated from protobuf enum <code>OFFLINE = 0;</code>
+     * Generated from protobuf enum <code>UNDEFINED = 0;</code>
      */
-    const OFFLINE = 0;
+    const UNDEFINED = 0;
     /**
-     * Generated from protobuf enum <code>BROADCASTING = 1;</code>
+     * Generated from protobuf enum <code>OFFLINE = 1;</code>
      */
-    const BROADCASTING = 1;
+    const OFFLINE = 1;
     /**
-     * Generated from protobuf enum <code>LISTENING = 2;</code>
+     * Generated from protobuf enum <code>BROADCASTING = 2;</code>
      */
-    const LISTENING = 2;
+    const BROADCASTING = 2;
     /**
-     * Generated from protobuf enum <code>SCHEDULING = 3;</code>
+     * Generated from protobuf enum <code>LISTENING = 3;</code>
      */
-    const SCHEDULING = 3;
+    const LISTENING = 3;
+    /**
+     * Generated from protobuf enum <code>SCHEDULING = 4;</code>
+     */
+    const SCHEDULING = 4;
 
     private static $valueToName = [
+        self::UNDEFINED => 'UNDEFINED',
         self::OFFLINE => 'OFFLINE',
         self::BROADCASTING => 'BROADCASTING',
         self::LISTENING => 'LISTENING',

@@ -14,9 +14,9 @@ use Google\Protobuf\Internal\GPBUtil;
 class ErrorResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>.demo.Error error = 1;</code>
+     * Generated from protobuf field <code>int32 error = 1;</code>
      */
-    protected $error = null;
+    protected $error = 0;
 
     /**
      * Constructor.
@@ -24,7 +24,7 @@ class ErrorResponse extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type \WebTeam\Demo\Cosmic\Proto\Error $error
+     *     @type int $error
      * }
      */
     public function __construct($data = NULL) {
@@ -33,32 +33,22 @@ class ErrorResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.demo.Error error = 1;</code>
-     * @return \WebTeam\Demo\Cosmic\Proto\Error|null
+     * Generated from protobuf field <code>int32 error = 1;</code>
+     * @return int
      */
     public function getError()
     {
         return $this->error;
     }
 
-    public function hasError()
-    {
-        return isset($this->error);
-    }
-
-    public function clearError()
-    {
-        unset($this->error);
-    }
-
     /**
-     * Generated from protobuf field <code>.demo.Error error = 1;</code>
-     * @param \WebTeam\Demo\Cosmic\Proto\Error $var
+     * Generated from protobuf field <code>int32 error = 1;</code>
+     * @param int $var
      * @return $this
      */
     public function setError($var)
     {
-        GPBUtil::checkMessage($var, \WebTeam\Demo\Cosmic\Proto\Error::class);
+        GPBUtil::checkInt32($var);
         $this->error = $var;
 
         return $this;
